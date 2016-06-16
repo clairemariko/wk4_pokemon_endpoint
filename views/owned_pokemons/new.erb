@@ -1,0 +1,20 @@
+<div>
+  
+
+  <form action="/owned_pokemons" method="post">
+
+  <select name="pokemon_id">
+  <% @pokemons.each do |pokemon| %>
+    <option value="<%= pokemon.id %>"><%= pokemon.name %></option>
+  <% end %>
+  </select>
+  <select name="trainer_id">
+  <% @trainers.each do |trainer| %>
+    <option value="<%= trainer.id %>"><%= trainer.name %></option>
+  <% end %>
+  </select>
+
+    <input type='submit' value="Catch Pokemon!">
+  </form>
+
+</div>

@@ -1,0 +1,6 @@
+<div>
+<% @owned_pokemons.each do |owned_pokemon| %>
+<%= owned_pokemon.trainer.name %> - <%= owned_pokemon.pokemon.name %>
+
+<% end %>
+</div>
